@@ -54,5 +54,25 @@ public class Test {
 
         String stringVal = "a red fox jump over the fence.";
         System.out.printf("%20.10s\n", stringVal);
+
+//        final int NUMBER_OF_BEATLES = 4;
+//        BandMember[] theBeatles = new BandMember[NUMBER_OF_BEATLES];
+
+        String str = new String();
+        System.out.println(str.equals("")); // true
+        String str1 = null;
+        System.out.println(str1 == null); // true
+
+        System.out.println('a' + "corn");
+
+//        System.out.println(null == false); // error
+
+        System.out.println(1 + 3.0);
+        int a = 5;
+        int c = 1;
+        float b = 3.2F;
+        System.out.println(a + b);
+        System.out.println(a / b);
+        System.out.println(a / c);
     }
 }
