@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MapTest {
     public static void main(String[] args) {
-        Map m = new HashMap();
+        Map m = new HashMap(); // Map<Character, Integer> m = new HashMap<>();
         String str = "Hello, my name is Lucy and I programme";
 
         for (char x : str.toLowerCase().toCharArray()) {

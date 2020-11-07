@@ -10,6 +10,7 @@ public class ListDemo {
         t.add(3);
         t.add(4);
         t.add(5);
+//        t.get(10); // IndexOutOfBoundsException
         System.out.println(t);
         System.out.println(t.get(0));
         t.set(1, 5);
