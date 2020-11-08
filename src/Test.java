@@ -74,5 +74,41 @@ public class Test {
         System.out.println(a + b);
         System.out.println(a / b);
         System.out.println(a / c);
+
+        System.out.println(String.format("2020-9-%02d", 3));
+        System.out.printf("2020-9-%02d%n", 23);
+
+        System.out.println(generateRandomNumber(1, 2));
+
+//        System.out.println(Integer.parseInt("10s")); // NumberFormatException
+//        System.out.println(Integer.parseInt("s10")); // NumberFormatException
+//        System.out.println(Integer.parseInt("10 ")); // NumberFormatException
+//        System.out.println(Integer.parseInt("10.0")); // NumberFormatException
+        System.out.println(Double.parseDouble("10.0"));
+
+        String s1 = "3a";
+        String s2 = "a3";
+        String s3 = "3 ";
+        String s4 = "3.0";
+        String s5 = "3";
+//        System.out.println(Integer.valueOf(s1)); // NumberFormatException
+//        System.out.println(Integer.valueOf(s2)); // NumberFormatException
+//        System.out.println(Integer.valueOf(s3)); // NumberFormatException
+//        System.out.println(Integer.valueOf(s4)); // NumberFormatException
+        System.out.println(Integer.valueOf(s5));
+        int as = Integer.valueOf(s5); // redundant boxing
+        int as1 = Integer.parseInt(s5);
+        System.out.println("as, as1 = " + as + ", " + as1);
+
+//        String aa = "hello";
+//        String bb = "hello";
+//        System.out.println(aa == bb);
+
+        System.out.println(Arrays.asList("hi", "there").toString()); // [hi, there]
+
+    }
+
+    public static int generateRandomNumber(int min, int max) {
+        return (int) (Math.random() * (max - min + 1) + min);
     }
 }
